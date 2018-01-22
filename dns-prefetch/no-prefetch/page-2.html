@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>page 2</title>
+    <style>
+      .container { margin: 0 auto; width: 80%; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>DNS Prefetch サンプル</h1>
+      <h2>twitter.comからいいねボタンをダウンロード</h2>
+      <p>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+      </p>
+      <!-- Tweetボタンを読み込み -->
+      <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+
+      <h2>github.comから埋め込みソースコードをダウンロード</h2>
+      <script src="https://gist.github.com/gaaamii/a6a84f7decccc019364173ad6f611f3e.js"></script>
+
+      <h2>gyazo.comからGIFをダウンロード</h2>
+      <a href="https://gyazo.com/7fc71ff9aa9ee6700e93454e60b0abcd">
+        <img src="https://i.gyazo.com/7fc71ff9aa9ee6700e93454e60b0abcd.gif" alt="https://gyazo.com/7fc71ff9aa9ee6700e93454e60b0abcd" width="854"/></a>
+      <hr />
+      <p style="margin: 40px 0;">
+      これらのリソース取得はそれぞれ別ドメインからの取得になるので、ドメインの解決が必要になります。
+      <br />
+      <code>dns-prefetch</code>を使うことで、これらのドメイン解決を前ページのときに行うことができます。
+      </p>
+    </div>
+  </body>
+</html>
